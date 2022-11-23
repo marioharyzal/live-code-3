@@ -2,7 +2,9 @@ package com.pintarngoding.model;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "m_class")
@@ -33,6 +35,9 @@ public class ClassTraining {
     @MapsId("idTrainingCategory")
     @JoinColumn(name = "id_training_category")
     TrainingCategory trainingCategory;
+
+    @OneToMany(mappedBy = "classTraining")
+    private List<Studying> studyings = new ArrayList<>();
 
     /**
      *

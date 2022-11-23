@@ -12,6 +12,7 @@ public class Trainer {
     @Column(name = "id_trainer")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idTrainer;
+
     @Column(name = "trainer_name", nullable = false, length = 100)
     private String trainerName;
 

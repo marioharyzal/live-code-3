@@ -17,7 +17,7 @@ public class Training {
     @Column(name = "training_name", nullable = false, length = 100)
     private String trainingName;
 
-    @Column(name = "desc", nullable = false, length = 255)
+    @Column(name = "description", nullable = false, length = 255)
     private String desc;
 
     @Column(name = "training_type", columnDefinition = "varchar(4)")
